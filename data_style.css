@@ -9,9 +9,12 @@
 {
 
 }
-#yada
+a
 {
-	
+	position: relative;
+	background-blend-mode: overlay;
+		z-index: 12;
+
 }
 .cl
 {
@@ -80,5 +83,5 @@
 {
 	opacity: 0.15;
 	margin-bottom: -600px;
-	position: relative;
+
 }
