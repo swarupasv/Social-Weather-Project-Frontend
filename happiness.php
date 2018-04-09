@@ -57,15 +57,15 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Stocks</a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#Terrorism">Terrorism</a>
-                <span class="sr-only">(current)</span>
+            <li class="nav-item">
+              <a class="nav-link" href="terrorism.php">Terrorism</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">World Bank Data</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="happiness.php">Happiness</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Happiness</a>
+              <span class="sr-only">(current)</span>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="internet.php">Internet Usage</a>
@@ -85,10 +85,10 @@
     <br>
     <br>
     <h3>
-  Different attacks over the years
-  <small class="text-muted">With a brief summary</small>
+  How happy can the internet make you?
+  <small class="text-muted">Not that happy.</small>
 </h3>
-          <iframe src="http://35.196.46.176:3000/d-solo/k8oMe-iik/social-weather?panelId=1&orgId=1&tab=metrics&from=-315601200000&to=1325394000000&theme=light" width="100%" height="100%" frameborder="0"></iframe>
+         <iframe src="http://35.196.46.176:3000/d-solo/k8oMe-iik/social-weather?orgId=1&panelId=8&from=-315601200000&to=1325394000000y&theme=light" width="100%" height="100%" frameborder="0"></iframe>
 </div>
     <!-- Page Content -->
     <section class="py-5">
@@ -96,22 +96,62 @@
         <br>
         <br>
         <br>
-        <h1>Terrorism</h1>
-        <p>Above we have shown the terrorist attacks which have taken place in the USA since 1960, with a brief summary for each dataset.
-          <code>Social Weather Station.</code>
+        <h1>Happiness</h1>
+        <p>
+            At a glance it is not clear. So we need to do more analysis. Let's see the years which had a better happiness than the average happiness.
           </p>
+       
       <h3>
-  Want to see a a detailed table?
+  Average happiness
+  <small class="text-muted">Always nice to be above average</small>
+</h3>
+      </div>
+     </section>
+    <div class="check">
+    
+    
+    <iframe src="http://35.196.46.176:3000/d-solo/k8oMe-iik/social-weather?orgId=1&panelId=9&from=-315601200000&to=1325394000000&theme=light" width="100%" height="60%" frameborder="0"></iframe>
+      </div>
+      <section class="py-5">
+      <div class="container">
+       
+        <h1>Internet</h1>
+        <p>The internet did have a steep increase from 1995 to 2002. you can <a href="internet.php">click here</a> to know more about it, I have explained it in my relation between stocks and happiness.
+          </p>
+       
+      <h3>
+  Want to see a a detailed table of the difference in internet usage?
   <small class="text-muted"><input type="button" value="Click here" id="geohash" onclick="change()"></small>
 </h3>
       </div>
      </section>
-      
     <div class="check1">
     
     
-    <iframe src="http://35.196.46.176:3000/d-solo/k8oMe-iik/social-weather?panelId=2&orgId=1&from=-315601200000&to=1325394000000&theme=light" id="tabgeo" width="100%" height="100%" frameborder="0"></iframe>
+    <iframe src="ttp://35.196.46.176:3000/d-solo/k8oMe-iik/social-weather?orgId=1&panelId=5&from=-315601200000&to=1325394000000&theme=light" width="100%" height="80%" frameborder="0"></iframe>
       </div>
+    <div class="check">
+    <br>
+    <br>
+    <br>
+    <h3>
+  Happiness vs internet usage
+  <small class="text-muted">1990-2010</small>
+</h3>
+        
+         <iframe src="http://35.196.46.176:3000/d-solo/k8oMe-iik/social-weather?orgId=1&panelId=10&from=-315601200000&to=1325394000000&theme=light" width="100%" height="50%" frameborder="0"></iframe>
+        <iframe src="http://35.196.46.176:3000/d-solo/k8oMe-iik/social-weather?orgId=1&panelId=11&from=-315601200000&to=1325394000000&theme=light" width="100%" height="50%" frameborder="0"></iframe>
+        <p></p>
+</div> 
+      
+        
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <br>
     <br>
     <br>
@@ -134,10 +174,10 @@
             $('.check1').show(2000);
         }
          else
-             {
+         {
                  document.getElementById("geohash").value="Click here";
                  $('.check1').hide(2000);
-             }
+          }
      }
     </script>
   </body>

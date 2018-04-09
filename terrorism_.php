@@ -1,5 +1,7 @@
 <style>
-
+body {
+    background-color: lightblue;
+}
 
 h1{
     color: black;
@@ -72,42 +74,39 @@ h1{
 
 .dropdown-content a:hover {
     background-color: #ddd;
-    z-index: 4;
 }
 
 .dropdown:hover .dropdown-content {
-    display: none;
+    display: block;
 }
 </style>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-
-<title>Social Weather</title>
-<body bgcolor="#D0D0D0">
+</head>
+<body>
 
 <div id="overlay">
 
 <img src="home.jpg" id="logo">
 
 <div class="navbar">
-  <a href="#home">Home</a>
+  <a href="index.php">Home</a>
   <a href="#news">Terrorism</a>
-  <a href="#news">World Bank Data</a>
-  <a href="#news">Stocks</a>
-  <a href="#news">Happiness</a>
-  <a href="#news">Internet Usage</a>
+  <a href="#news">World Bank data</a>
+  <div class="dropdown">
+    <button class="dropbtn">Stocks 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="djia.php">DJIA</a>
+      <a href="svi.php">SP500</a>
+      <a href="#">NASDAQ</a>
+      <a href="#">RUSSELL1000</a>
+    </div>
+    
+  </div> 
 </div>
-<div>
-<h3>
-  Different attacks over the years
-  <small class="text-muted">With a brief summary</small>
-</h3>
-</div>
-<iframe src="http://localhost:3000/dashboard-solo/db/new-dashboard-copy?panelId=1&orgId=1&tab=general&from=-315601200000&to=1522702264565&theme=light" width="100%" height="100%" frameborder="0"></iframe>
-<h3></h3>
-<h3>
-  Want to see the geohashed values of this?
-  <small class="text-muted"><input type="button" value="Click here"></small>
-</h3>
-<iframe src="http://localhost:3000/dashboard-solo/db/new-dashboard-copy?panelId=2&orgId=1&tab=general&from=-315601200000&to=1522702264565&theme=light" width="100%" height="100%" frameborder="0"></iframe>
+
+<h1>Let's have a look at the Terrorism data.</h1>
+
+<iframe src="http://localhost:3000/d-solo/TplmhBkmz/new-dashboard-copy?panelId=22&orgId=1&from=-315590400000&to=1519910127896" width="100%" height="200" frameborder="0"></iframe>
+
 </div>

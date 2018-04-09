@@ -57,9 +57,8 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Stocks</a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#Terrorism">Terrorism</a>
-                <span class="sr-only">(current)</span>
+            <li class="nav-item">
+              <a class="nav-link" href="terrorism.php">Terrorism</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">World Bank Data</a>
@@ -67,8 +66,9 @@
             <li class="nav-item">
               <a class="nav-link" href="happiness.php">Happiness</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="internet.php">Internet Usage</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Internet Usage</a>
+              <span class="sr-only">(current)</span>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="data.html">Data Sources</a>
@@ -85,10 +85,10 @@
     <br>
     <br>
     <h3>
-  Different attacks over the years
-  <small class="text-muted">With a brief summary</small>
+  Does the internet usage affect the stocks?
+  <small class="text-muted">A brief analysis</small>
 </h3>
-          <iframe src="http://35.196.46.176:3000/d-solo/k8oMe-iik/social-weather?panelId=1&orgId=1&tab=metrics&from=-315601200000&to=1325394000000&theme=light" width="100%" height="100%" frameborder="0"></iframe>
+         <iframe src="http://35.196.46.176:3000/d-solo/k8oMe-iik/social-weather?orgId=1&from=-315601200000&to=1325394000000&panelId=3&theme=light" width="100%" height="100%" frameborder="0"></iframe>
 </div>
     <!-- Page Content -->
     <section class="py-5">
@@ -96,22 +96,77 @@
         <br>
         <br>
         <br>
-        <h1>Terrorism</h1>
-        <p>Above we have shown the terrorist attacks which have taken place in the USA since 1960, with a brief summary for each dataset.
-          <code>Social Weather Station.</code>
+        <h1>Internet</h1>
+        <p>The internet did have a steep increase from 1995 to 2002. Let's see the stocks during that period. Let's check the stocks during 1994 to 2003 to see the stocks. Below I have plotted a graph which gives the average stock value per year from 1994 to 2003. 
+        
           </p>
+       
       <h3>
-  Want to see a a detailed table?
+  Want to see a a detailed table of the difference in internet usage?
   <small class="text-muted"><input type="button" value="Click here" id="geohash" onclick="change()"></small>
 </h3>
       </div>
      </section>
-      
     <div class="check1">
     
     
-    <iframe src="http://35.196.46.176:3000/d-solo/k8oMe-iik/social-weather?panelId=2&orgId=1&from=-315601200000&to=1325394000000&theme=light" id="tabgeo" width="100%" height="100%" frameborder="0"></iframe>
+    <iframe src="http://35.196.46.176:3000/d-solo/k8oMe-iik/social-weather?orgId=1&panelId=5&from=-315601200000&to=1325394000000&theme=light" width="100%" height="80%" frameborder="0"></iframe>
       </div>
+    <div class="check">
+    
+    <h3>
+  Stocks
+  <small class="text-muted">1994-2003</small>
+</h3>
+         <iframe src="http://35.196.46.176:3000/d-solo/k8oMe-iik/social-weather?orgId=1&panelId=4&from=-315601200000&to=1325394000000&theme=light" width="100%" height="100%" frameborder="0"></iframe>
+</div>
+<section class="py-5">
+      <div class="container">
+        <br>
+        <br>
+        <br>
+        <h1>2-axis plot(Stocks vs Internet usage)</h1>
+        <p>Let's look at a 2 axis plot of the stocks vs the internet.
+        
+          </p>
+       
+      <h3>
+  Want to see a a detailed table of the difference in internet usage?
+  <small class="text-muted"><input type="button" value="Click here" id="geohash" onclick="change()"></small>
+</h3>
+      </div>
+     </section>
+<div class="check">
+    <br>
+    <br>
+    <br>
+    <h3>
+  DJIA vs internet
+  <small class="text-muted">1992-2010</small>
+</h3>
+         <iframe src="http://35.196.46.176:3000/d-solo/k8oMe-iik/social-weather?orgId=1&panelId=6&from=-315601200000&to=1325394000000&theme=light" width="100%" height="50%" frameborder="0"></iframe>
+         <iframe src="http://35.196.46.176:3000/d-solo/k8oMe-iik/social-weather?orgId=1&panelId=7&from=-315601200000&to=1325394000000&theme=light" width="100%" height="50%" frameborder="0"></iframe>
+</div>
+<section class="py-5">
+      <div class="container">
+        <br>
+        <br>
+        <br>
+        <h1>Conclusion</h1>
+        <p>By our analysis we can clearly see that there is a relation between an increase in internet usage and stock market rise.
+        <code>Social Weather.</code>
+        
+          </p>
+       
+      </div>
+     </section>      
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <br>
     <br>
     <br>
@@ -134,10 +189,10 @@
             $('.check1').show(2000);
         }
          else
-             {
+         {
                  document.getElementById("geohash").value="Click here";
                  $('.check1').hide(2000);
-             }
+          }
      }
     </script>
   </body>
